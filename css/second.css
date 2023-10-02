@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200;400&display=swap');
+
+body {
+  color: #333;
+  font-family: Smooch Sans;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
+}
+
+h1 {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 5% 0;
+  padding: 0.5em;
+  margin: 0 0 5% 0;
+}
+
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  background: #222;
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+  font-size: 13px;
+}
+
+.card h4 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card .front strong {
+  font-family: font-family: Arial, Helvetica, serif;
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 42px;
+  padding: 10px 10px 0 10px;
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+}
+
+.card .back a {
+  padding: 0.3em 0.5em;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+
+.cardBox:nth-child(1) .card .back {
+  background: #333;
+}
+
+.cardBox:nth-child(1) .card .front {
+  background-image:url(https://i.pinimg.com/564x/06/20/91/06209184e04a7ef8849493ead65f1452.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(2) .card .back {
+  background: #333;
+}
+.cardBox:nth-child(2) .card .front {
+  background-image:url(https://i.pinimg.com/564x/d2/30/0f/d2300f6d850a942635e78aef4bb4910d.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(3) .card .back {
+  background: #333;
+}
+.cardBox:nth-child(3) .card .front {
+  background-image:url(https://i.pinimg.com/564x/cd/2b/c8/cd2bc8c3de8c5a52bd2b1940acabaa5b.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(4) .card .back {
+  background: #333;
+}
+.cardBox:nth-child(4) .card .front {
+  background-image:url(https://i.pinimg.com/564x/cd/a5/2d/cda52d6084f7af82e998050192a4af7e.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(5) .card .front {
+  background-image: url(https://i.pinimg.com/564x/b4/98/98/b49898c7f46aa29deba491f0043ebc75.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(6) .card .front {
+  background-image:url(https://i.pinimg.com/564x/7a/5a/e4/7a5ae4033a36a246003a3454800096ee.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(7) .card .front {
+  background-image:url(https://i.pinimg.com/564x/be/37/c9/be37c96cb83f62d7c0984b82c6d32460.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(8) .card .front {
+  background-image: url(https://i.pinimg.com/564x/cf/ce/70/cfce70b338ddb4626ce4c691b1a514ba.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(9) .card .front {
+  background-image:url(https://i.pinimg.com/564x/31/ae/05/31ae0504d669cd16ae4e8093a2b4d245.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(10) .card .front {
+  background-image: url(https://i.pinimg.com/564x/09/c3/57/09c357f9a21e817150d7fa475a3941c8.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(11) .card .front {
+  background-image:url(https://i.pinimg.com/564x/d3/46/0a/d3460ab686a80a7758a1c5d48e563671.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(12) .card .front {
+  background-image: url(https://i.pinimg.com/564x/d9/64/b3/d964b3085d1bc47e1c965092085903ee.jpg);
+  background-size: cover;
+}
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}
