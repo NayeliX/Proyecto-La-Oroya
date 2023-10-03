@@ -56,6 +56,12 @@ p + a {
 .img1{
 	background-image: url("https://www.educaciontrespuntocero.com/wp-content/uploads/2019/02/girasoles-978x652.jpg");
 }
+.img2{
+	background-image: url("https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg");
+}
+.img3{
+	background-image: url("https://i.blogs.es/ceda9c/dalle/450_1000.jpg");
+}
 .slider {
 	float: right;
 	position: relative;
