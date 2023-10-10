@@ -1,27 +1,30 @@
-/* imagenes */
+/*---------------------imagenes---------------------*/
+
 .col-sm-4{
 	height: 100vh;
 	max-height: 100vh;
 }
 .primero{
-	background-image: url(https://static.nationalgeographic.es/files/styles/image_3200/public/01-hubble-heic1501a.jpg?w=1190&h=1242);
+	background-image: url(https://i.pinimg.com/736x/6f/b8/3e/6fb83e42cb5bc2e93aa04954ded7bfcb.jpg);
 	background-repeat: no-repeat; 
 	background-size: cover;
 	background-position: center;
 }
 .segundo{
-	background-image: url(https://i.pinimg.com/originals/cb/de/2c/cbde2c5d535b21af128d62653a21a580.jpg);
+	background-image: url(https://i.pinimg.com/564x/37/78/75/37787592a85c4c5f342e68b6954b714d.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .tercero{
-	background-image: url(https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=);
+	background-image: url(https://i.pinimg.com/736x/e8/b4/fb/e8b4fbf12b4b4bbf8a1b4620a003c344.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center; 
 }
-/* titulo */
+
+/*---------------------titulo---------------------*/
+
 .title {
     position: absolute;
     top: 50%;
@@ -31,7 +34,7 @@
     z-index: 1;
 }
 .first_title{
-	color: rgb(233, 13, 13);
+	color: rgb(255, 255, 255);
 	font-size: 3em;
 	font-weight: 730;
 }
@@ -39,11 +42,15 @@
     position: relative;
     z-index: 0;
 }
-/* segunda parte */
+
+/*---------------------segunda parte---------------------*/
+
+.imagenes_modal{
+    margin: 2em;
+}
 .modals_docu{
 	position: relative;
     display: inline-block;
-	width: 25%;
 }
 .button {
     position: absolute;
@@ -53,7 +60,16 @@
     z-index: 1; /* Asegura que el botón esté encima de la imagen */
 }
 
-.imagen {
-    width: 100%; /* Ajusta el ancho de la imagen según tus necesidades */
-    height: auto; /* Ajusta la altura de la imagen de forma proporcional al ancho */
+.modal_img_docu{
+	width: 300px; /* Ancho fijo del div */
+    height: 200px; /* Altura fija del div */
+    border: 6px solid #000; /* Puedes agregar un borde para visualización */
+    overflow: hidden;
+}
+.modal_img_docu img{
+	width: 100%; /* Establece el ancho de la imagen al 100% del div */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* La imagen no excederá el ancho del div */
+    max-height: 100%; /* La imagen no excederá la altura del div */
+    object-fit: cover; 
 }
