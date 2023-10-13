@@ -1,23 +1,35 @@
 /*---------------------imagenes---------------------*/
 
-.col-sm-4{
+.col{
 	height: 100vh;
 	max-height: 100vh;
 }
 .primero{
-	background-image: url(https://i.pinimg.com/736x/6f/b8/3e/6fb83e42cb5bc2e93aa04954ded7bfcb.jpg);
+	background-image: url("/img/Prueba02.jpg");
 	background-repeat: no-repeat; 
 	background-size: cover;
 	background-position: center;
 }
 .segundo{
-	background-image: url(https://i.pinimg.com/564x/37/78/75/37787592a85c4c5f342e68b6954b714d.jpg);
+	background-image: url("/img/12.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .tercero{
-	background-image: url(https://i.pinimg.com/736x/e8/b4/fb/e8b4fbf12b4b4bbf8a1b4620a003c344.jpg);
+	background-image: url("/img/20.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+}
+.cuarto{
+	background-image: url("/img/cuarto.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+}
+.quinto{
+	background-image: url("/img/28.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center; 
@@ -34,42 +46,71 @@
     z-index: 1;
 }
 .first_title{
-	color: rgb(255, 255, 255);
-	font-size: 3em;
-	font-weight: 730;
+	color:rgb(255, 255, 255);
+    font-size: 4em; /* Ajusta el tamaño según tus necesidades */
+    font-weight: bold;
 }
 .row {
     position: relative;
     z-index: 0;
 }
 
-/*---------------------segunda parte---------------------*/
+/*---------------------btn---------------------*/
 
-.imagenes_modal{
-    margin: 2em;
+::before,
+::after {
+position: absolute;
+content: "";
 }
-.modals_docu{
+.btn {
 	position: relative;
-    display: inline-block;
+	display: inline-block;
+	width: auto; 
+	height: auto;
+	margin: 0px 25px 25px;
+	min-width: 10 0px;
 }
-.button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* Asegura que el botón esté encima de la imagen */
+.btn-holder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1000px;
+	margin: 10px auto 35px;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
 }
-
-.modal_img_docu{
-	width: 300px; /* Ancho fijo del div */
-    height: 200px; /* Altura fija del div */
-    border: 6px solid #000; /* Puedes agregar un borde para visualización */
-    overflow: hidden;
+.btn span {         
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	top: 0; left: 0;
+	width: 100%;
+	padding: 15px 20px;
+	transition: 0.3s;
 }
-.modal_img_docu img{
-	width: 100%; /* Establece el ancho de la imagen al 100% del div */
-    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
-    max-width: 100%; /* La imagen no excederá el ancho del div */
-    max-height: 100%; /* La imagen no excederá la altura del div */
-    object-fit: cover; 
+	
+.btn-2::before {
+	background-color: rgb(15, 161, 218);
+	transition: 0.3s ease-out;
+}
+.btn-2 span {
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
+	transition: 0.2s;
+}  
+.btn-2 span:hover {
+	color: rgb(255,255,255);
+	transition: 0.2s 0.1s;
+}
+.btn.hover-slide-right::before {
+	top: 0; bottom: 0; left: 0; 
+	height: 100%; width: 0%;
+}
+.btn.hover-slide-right:hover::before {
+	width: 100%;
 }
