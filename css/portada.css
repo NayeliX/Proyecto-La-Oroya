@@ -126,3 +126,19 @@
 .btn.hover-slide-right:hover::before {
 	width: 100%;
 }
+
+/* @media screen and (max-width: 700px) {
+    .row {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Agrega un desplazamiento suave para iOS */
+        scrollbar-width: thin; /* Para navegadores que admiten la propiedad scrollbar-width */
+        scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Color de la barra de desplazamiento y su riel */
+    }
+
+    .col {
+        flex: 0 0 auto;
+        width: 100%; /* Cada columna ocupa todo el ancho del carrusel */
+        padding: 0 10px; /* Espaciado entre las columnas */
+    }
+} */
