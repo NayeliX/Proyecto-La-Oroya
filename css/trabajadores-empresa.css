@@ -1,0 +1,82 @@
+.container_title {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos hijos en los extremos del contenedor */
+    align-items: center; /* Alinea verticalmente los elementos hijos */
+    padding: 0 1em;
+}
+
+.container_title button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.container_title h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    flex: 1; /* Permite que el h1 ocupe el espacio disponible y se centre horizontalmente */
+}
+
+/*---------------------segunda parte---------------------*/
+
+.imagenes_modal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+.modals_docu{
+	position: relative;
+    display: inline-block;
+    width: 30%; /* Ajusta el ancho para mostrar tres elementos por fila */
+    box-sizing: border-box;
+    padding: 10px;
+}
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .modals_docu {
+        width: 45%; /* Muestra dos elementos por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 576px) {
+    .modals_docu {
+        width: 100%; /* Muestra un elemento por fila en pantallas pequeñas */
+    }
+}
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 50% !important;
+    border: 3px solid #0c2239 !important;
+    background-color: #0c22395e !important;
+}
+.modal_img_docu{
+    width: 100%;
+    height: 300px; /* Establece la altura que desees para el contenedor */
+    border: 2px solid #000;
+    overflow: hidden;
+}
+.modal_img_docu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#scrollToTopBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior de la ventana */
+    right: 20px; /* Distancia desde el lado derecho de la ventana */
+    background-color: #0c2239;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    z-index: 999;
+}
