@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangea+Display&display=swap');
+body{
+	margin: 0;
+}
+
 /*---------------------imagenes---------------------*/
 
 .col{
@@ -7,7 +12,7 @@
 	transition: filter 0.3s ease;
 }
 .col:hover {
-    filter: brightness(1.2);
+    filter: brightness(0.9);
 }
 .primero{
 	background-image: url("/img/Prueba02.jpg");
@@ -51,13 +56,16 @@
     z-index: 1;
 }
 .first_title{
-	color:rgb(255, 255, 255);
-    font-size: 4em;
+	color: #ffffff;
+    font-size: 88px;
     font-weight: bold;
-	-webkit-text-stroke: 2px black;
-    text-stroke: 2px black; 
+	line-height: 96.8px;
+	letter-spacing: normal;
+	-webkit-text-stroke: 1px #9cdfff;
+    text-stroke: 1px #9cdfff; 
 	text-transform: uppercase;
     /* color: transparent; */
+	font-family: 'Pangea Display',Helvetica, Arial, sans-serif;
 }
 .row {
     position: relative;
@@ -104,7 +112,7 @@
 }
 	
 .btn-2::before {
-	background-color: rgb(0, 0, 0);
+	background-color: #9cdfff;
 	transition: 0.3s ease-out;
 }
 .btn-2 span {
@@ -113,7 +121,8 @@
 	transition: 0.2s;
 }  
 .btn-2 span:hover {
-	color: rgb(255,255,255);
+	color: rgb(0, 0, 0);
+	border: 1px solid rgb(0, 0, 0);
 	transition: 0.2s 0.1s;
 }
 .btn.hover-slide-right::before {
@@ -142,12 +151,18 @@
         /* padding: 0 10px; */ /* Espaciado entre las columnas */
    /*  }
 }  */
-
-.sectionOne {
+.sectionTwo{
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(156,224,255,1) 50%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(156,224,255,1) 50%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(156,224,255,1) 50%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+.sectionOne, .sectionTwo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 6em;
+	padding: 2em 6em 2em 6em;
 }
 .sectionOne img {
 	border-radius: 100000px;
@@ -169,12 +184,6 @@
 	text-decoration: underline;
 }
 
-.sectionTwo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 6em;
-}
 .sectionTwo img {
 	border-radius: 100000px;
 	object-fit: cover;
@@ -193,4 +202,102 @@
 }
 .descriptionTwo h2:hover{
 	text-decoration: underline;
+}
+
+/* Estilos para pantallas más grandes */
+/* @media (min-width: 768px) {
+    .sectionOne, .sectionTwo {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .sectionOne img, .sectionTwo img {
+        margin-right: 20px;
+    }
+} */
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+	.first_title{
+		font-size: 20px;
+	}
+    .sectionOne, .sectionTwo{
+		display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+	margin: 10px  0 0 0;
+    /* margin-bottom: 20px; */
+	}
+
+	.sectionOne img, .sectionTwo img{
+		width: 20%;
+	}
+}
+
+/* footer */
+.incio {
+	position:relative;
+	text-align:center;
+	color:#9cdfff;
+}
+.waves {
+	position:relative;
+	width: 100%;
+	height:15vh;
+	margin-bottom:-7px; /*Fix for safari gap*/
+	min-height:100px;
+	max-height:150px;
+}
+.content {
+	position:relative;
+	height:20vh;
+	text-align:center;
+	background-color: #9cdfff;
+}
+.social-icon{
+    display: flex;
+	flex-direction: row !important;
+	justify-content: center;
+}
+
+/* Animation */
+.parallax > use {
+animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+animation-delay: -2s;
+animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+animation-delay: -3s;
+animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+animation-delay: -4s;
+animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+animation-delay: -5s;
+animation-duration: 20s;
+}
+@keyframes move-forever {
+0% {
+	transform: translate3d(-90px,0,0);
+}
+100% { 
+	transform: translate3d(85px,0,0);
+}
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+.waves {
+	height:40px;
+	min-height:40px;
+}
+.content {
+	height:30vh;
+}
 }

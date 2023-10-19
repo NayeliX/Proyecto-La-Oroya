@@ -57,7 +57,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: #0c2239 !important;
+    border-radius: 50% !important;
+    background-color: #9ce0ffc4 !important;
+    border: 3px solid #9cdfff !important;
 }
 .modal_img_docu{
     width: 100%;
@@ -76,8 +78,8 @@
     position: fixed;
     bottom: 20px; /* Distancia desde la parte inferior de la ventana */
     right: 20px; /* Distancia desde el lado derecho de la ventana */
-    background-color: #0c2239;
-    color: #fff;
+    background-color: #9cdfff;
+    color: #000000;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;

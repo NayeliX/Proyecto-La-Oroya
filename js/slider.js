@@ -22,3 +22,39 @@
         initSlider(); // Vuelve a inicializar el slider cuando la ventana cambia de tamaño
     });
 }); */
+
+// Espera a que el documento esté completamente cargado
+document.addEventListener("DOMContentLoaded", function() {
+    var cols = document.querySelectorAll('.col'); // Selecciona todos los elementos con clase .col
+    var screenWidth = window.innerWidth; // Obtiene el ancho de la pantalla al cargar la página
+
+    // Función para inicializar el slider
+    function initSlider() {
+        // Verifica si el ancho de la pantalla es menor de 700 px
+        if (screenWidth < 700) {
+            // Usa un bucle para ocultar todos los elementos .col excepto el primero
+            for (var i = 1; i < cols.length; i++) {
+                cols[i].style.display = 'none';
+            }
+        }
+    }
+
+    // Llama a la función para inicializar el slider
+    initSlider();
+
+    // Agrega un event listener para cambiar los slides cuando se hace clic en los botones del slider
+    document.getElementById('prevBtn').addEventListener('click', function() {
+        // Código para mostrar el slide anterior
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', function() {
+        // Código para mostrar el siguiente slide
+    });
+
+    // Actualiza el ancho de la pantalla cuando se redimensiona la ventana
+    window.addEventListener('resize', function() {
+        screenWidth = window.innerWidth;
+        initSlider(); // Vuelve a inicializar el slider cuando se redimensiona la ventana
+    });
+});
+
