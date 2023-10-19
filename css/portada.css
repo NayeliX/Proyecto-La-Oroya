@@ -240,7 +240,6 @@ body{
 /* footer */
 .incio {
 	position:relative;
-	text-align:center;
 	color:#9cdfff;
 }
 .waves {
@@ -257,10 +256,21 @@ body{
 	text-align:center;
 	background-color: #9cdfff;
 }
-.social-icon{
+.social-media {
     display: flex;
-	flex-direction: row !important;
-	justify-content: center;
+    justify-content:center; /* Alinea los elementos horizontalmente con espacio alrededor */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+}
+
+/* Estilo adicional para los iconos si es necesario */
+.social-icon {
+    margin: 0 44px 60px 0;/* Espaciado horizontal entre los iconos */
+}
+.fa{
+	color: #000000;
+}
+.fa:hover{
+	color: rgb(0, 38, 255);
 }
 
 /* Animation */
