@@ -151,6 +151,9 @@ body{
         /* padding: 0 10px; */ /* Espaciado entre las columnas */
    /*  }
 }  */
+
+/*---------------------sections---------------------*/
+
 .sectionTwo{
 	background: rgb(255,255,255);
 	background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(156,224,255,1) 50%, rgba(255,255,255,1) 100%);
@@ -219,23 +222,22 @@ body{
 } */
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 	.first_title{
 		font-size: 20px;
 	}
     .sectionOne, .sectionTwo{
 		display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-	margin: 10px  0 0 0;
+		flex-direction: row;
+		align-items: center;
+		text-align: center;
+		margin: 10px  0 0 0;
     /* margin-bottom: 20px; */
-	}
+	/* }
 
-	.sectionOne img, .sectionTwo img{
-		width: 20%;
+	
 	}
-}
+} */ 
 
 /* footer */
 .incio {
@@ -302,7 +304,7 @@ animation-duration: 20s;
 }
 }
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 .waves {
 	height:40px;
 	min-height:40px;
@@ -310,4 +312,83 @@ animation-duration: 20s;
 .content {
 	height:30vh;
 }
+} */
+
+/*---------------------MOBILE---------------------*/
+@media (min-width:320px) and (max-width:480px){
+	.first_title{
+		font-size: 50px;
+	}
+	.sectionOne{
+		padding: 2em 2em 2em 2em;
+	}
+	.sectionOne img , .sectionTwo img{
+		width: 15%;
+	}
+	.descriptionOne{
+		margin-left: 1rem;
+	}
+	.descriptionTwo {
+		margin-right: 1rem; /* Espaciado entre la imagen y el texto */	
+	}
+	.descriptionTwo span{
+		font-size: 15px;
+	}
+	.descriptionTwo h2{
+		font-size: 20px;
+	}
+	.descriptionOne span{
+		font-size: 15px;
+	}
+	.descriptionOne h2{
+		font-size: 20px;
+	}
+	.sectionTwo {
+		padding: 2em 2em 2em 2em;
+	}
+	.waves {
+		height:40px;
+		min-height:40px;
+	}
+	.content {
+		height:30vh;
+	}
+}
+
+/*---------------------TABLET---------------------*/
+@media (min-width: 481px) and (max-width:768px) {
+	.sectionOne img, .sectionTwo img{
+		width: 40%;
+	}
+	.descriptionOne {
+		margin-left: 1rem; /* Espaciado entre la imagen y el texto */	
+	}
+	.descriptionTwo {
+		margin-right: 1rem; /* Espaciado entre la imagen y el texto */	
+	}
+	.descriptionTwo span{
+		font-size: 15px;
+	}
+	.descriptionTwo h2{
+		font-size: 25px;
+	}
+	.descriptionOne span{
+		font-size: 15px;
+	}
+	.descriptionOne h2{
+		font-size: 25px;
+	}
+	.sectionOne{
+		padding: 2em 2em 2em 2em;
+	}
+	.sectionTwo{
+		padding: 2em 2em 2em 2em;
+	}
+	.waves {
+		height:40px;
+		min-height:40px;
+	}
+	.content {
+		height:30vh;
+	}
 }

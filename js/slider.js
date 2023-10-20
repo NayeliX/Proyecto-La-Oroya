@@ -24,14 +24,14 @@
 }); */
 
 // Espera a que el documento esté completamente cargado
-/* document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     var cols = document.querySelectorAll('.col'); // Selecciona todos los elementos con clase .col
     var screenWidth = window.innerWidth; // Obtiene el ancho de la pantalla al cargar la página
 
     // Función para inicializar el slider
     function initSlider() {
         // Verifica si el ancho de la pantalla es menor de 700 px
-        if (screenWidth < 700) {
+        if (screenWidth < 780) {
             // Usa un bucle para ocultar todos los elementos .col excepto el primero
             for (var i = 1; i < cols.length; i++) {
                 cols[i].style.display = 'none';
@@ -56,5 +56,5 @@
         screenWidth = window.innerWidth;
         initSlider(); // Vuelve a inicializar el slider cuando se redimensiona la ventana
     });
-}); */
+});
 
