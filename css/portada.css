@@ -249,8 +249,8 @@ body{
 	width: 100%;
 	height:15vh;
 	margin-bottom:-7px; /*Fix for safari gap*/
-	min-height:100px;
-	max-height:150px;
+	min-height:50px;
+	max-height:50px;
 }
 .content {
 	position:relative;
@@ -262,11 +262,7 @@ body{
     display: flex;
     justify-content:center; /* Alinea los elementos horizontalmente con espacio alrededor */
     align-items: center; /* Centra verticalmente los elementos en el contenedor */
-}
-
-/* Estilo adicional para los iconos si es necesario */
-.social-icon {
-    margin: 0 44px 60px 0;/* Espaciado horizontal entre los iconos */
+	gap: 4em;
 }
 .fa{
 	color: #000000;
@@ -351,7 +347,7 @@ animation-duration: 20s;
 		min-height:40px;
 	}
 	.content {
-		height:30vh;
+		height:12vh;
 	}
 }
 
@@ -389,6 +385,44 @@ animation-duration: 20s;
 		min-height:40px;
 	}
 	.content {
-		height:30vh;
+		height:12vh;
+	}
+}
+
+/*---------------------LAPTOP---------------------*/
+@media (min-width:769px) and (max-width:1023px){
+	.sectionOne img, .sectionTwo img{
+		width: 40%;
+	}
+	.descriptionOne {
+		margin-left: 1rem; /* Espaciado entre la imagen y el texto */	
+	}
+	.descriptionTwo {
+		margin-right: 1rem; /* Espaciado entre la imagen y el texto */	
+	}
+	.descriptionTwo span{
+		font-size: 15px;
+	}
+	.descriptionTwo h2{
+		font-size: 25px;
+	}
+	.descriptionOne span{
+		font-size: 15px;
+	}
+	.descriptionOne h2{
+		font-size: 25px;
+	}
+	.sectionOne{
+		padding: 2em 2em 2em 2em;
+	}
+	.sectionTwo{
+		padding: 2em 2em 2em 2em;
+	}
+	.waves {
+		height:40px;
+		min-height:40px;
+	}
+	.content {
+		height:12vh;
 	}
 }
