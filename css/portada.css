@@ -347,7 +347,7 @@ animation-duration: 20s;
 		min-height:40px;
 	}
 	.content {
-		height:12vh;
+		height:15vh;
 	}
 }
 
@@ -424,5 +424,17 @@ animation-duration: 20s;
 	}
 	.content {
 		height:12vh;
+	}
+}
+/*---------------------DESKTOP---------------------*/
+@media(min-width:1024px) and (max-width:1200px){
+	.content {
+		height:15vh;
+	}
+}
+/*---------------------EXTRA LARGE---------------------*/
+@media(min-width:1201px){
+	.content {
+		height:15vh;
 	}
 }
