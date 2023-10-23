@@ -45,6 +45,42 @@ body{
 	background-position: center; 
 }
 
+/*---------------------btn ates y después---------------------*/
+
+#prevBtn, #nextBtn {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+#prevBtn {
+    left: 10px;
+}
+#prevBtn:hover {
+    text-decoration: underline;
+}
+#nextBtn {
+    right: 10px;
+}
+#nextBtn:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 780px) {
+    #prevBtn, #nextBtn {
+        display: block;
+		position: absolute;
+		top: 0%;
+		transform: translateY(0%);
+		z-index: 1;
+    }
+}
+
+
 /*---------------------titulo---------------------*/
 
 .title {
