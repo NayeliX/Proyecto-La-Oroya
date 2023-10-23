@@ -98,6 +98,16 @@ body{
     right: 0;
     margin: 10px;
 }
+@media (min-width:781px) and (max-width:1023px){
+	.btn-holder{
+		bottom: 0%;
+        right: 25%;
+        transform: translate(25%, 0);
+	}
+	.btn{
+		margin: 0;
+	}
+}
 .btn span {         
 	position: relative;
 	display: inline-block;
@@ -135,22 +145,6 @@ body{
 .btn.hover-slide-right:hover::before {
 	width: 100%;
 }
-
-/* @media screen and (max-width: 700px) {
-    .row {
-        display: flex;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* Agrega un desplazamiento suave para iOS */
-        /* scrollbar-width: thin; */ /* Para navegadores que admiten la propiedad scrollbar-width */
-        /* scrollbar-color: rgba(0, 0, 0, 0.5) transparent; */ /* Color de la barra de desplazamiento y su riel */
-   /*  }
-
-    .col {
-        flex: 0 0 auto;
-        width: 100%; */ /* Cada columna ocupa todo el ancho del carrusel */
-        /* padding: 0 10px; */ /* Espaciado entre las columnas */
-   /*  }
-}  */
 
 /*---------------------sections---------------------*/
 
@@ -206,38 +200,6 @@ body{
 .descriptionTwo h2:hover{
 	text-decoration: underline;
 }
-
-/* Estilos para pantallas más grandes */
-/* @media (min-width: 768px) {
-    .sectionOne, .sectionTwo {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .sectionOne img, .sectionTwo img {
-        margin-right: 20px;
-    }
-} */
-
-/* Estilos para pantallas pequeñas */
-/* @media (max-width: 767px) {
-	.first_title{
-		font-size: 20px;
-	}
-    .sectionOne, .sectionTwo{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		text-align: center;
-		margin: 10px  0 0 0;
-    /* margin-bottom: 20px; */
-	/* }
-
-	
-	}
-} */ 
 
 /* footer */
 .incio {
@@ -299,21 +261,19 @@ animation-duration: 20s;
 	transform: translate3d(85px,0,0);
 }
 }
-/*Shrinking for mobile*/
-/* @media (max-width: 768px) {
-.waves {
-	height:40px;
-	min-height:40px;
-}
-.content {
-	height:30vh;
-}
-} */
+
 
 /*---------------------MOBILE---------------------*/
 @media (min-width:320px) and (max-width:480px){
+	/* .title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} */
 	.first_title{
-		font-size: 50px;
+		font-size: 35px;
+		line-height: 2em;
 	}
 	.sectionOne{
 		padding: 2em 2em 2em 2em;
@@ -353,6 +313,16 @@ animation-duration: 20s;
 
 /*---------------------TABLET---------------------*/
 @media (min-width: 481px) and (max-width:768px) {
+	/* .title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} */
+	.first_title{
+		font-size: 45px;
+		line-height: 2em;
+	}
 	.sectionOne img, .sectionTwo img{
 		width: 40%;
 	}
@@ -438,3 +408,19 @@ animation-duration: 20s;
 		height:15vh;
 	}
 }
+
+/* @media screen and (max-width: 700px) {
+    .row {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+	}
+
+    .col {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0 10px;
+	}
+}  */
