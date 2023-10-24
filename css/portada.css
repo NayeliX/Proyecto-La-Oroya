@@ -301,12 +301,6 @@ animation-duration: 20s;
 
 /*---------------------MOBILE---------------------*/
 @media (min-width:320px) and (max-width:480px){
-	/* .title {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	} */
 	.first_title{
 		font-size: 35px;
 		line-height: 2em;
@@ -343,7 +337,7 @@ animation-duration: 20s;
 		min-height:40px;
 	}
 	.content {
-		height:15vh;
+		height:20vh;
 	}
 }
 
