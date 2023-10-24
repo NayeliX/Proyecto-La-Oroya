@@ -95,6 +95,21 @@
     padding: 10px 20px;
     z-index: 999;
 }
+/*---------------------SMALL---------------------*/
+@media (min-width:200px) and (max-width:319px){
+	.container_title{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+    .container_title button{
+        margin-right: auto;
+    }
+    .container_title h1{
+        padding: 0;
+        font-size: 30px;
+    }
+}
 
 /*---------------------MOBILE---------------------*/
 @media (min-width:320px) and (max-width:480px){
