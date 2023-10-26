@@ -382,12 +382,6 @@ animation-duration: 20s;
 }
 /*---------------------TABLET---------------------*/
 @media (min-width: 481px) and (max-width:768px) {
-	/* .title {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	} */
 	.first_title{
 		font-size: 45px;
 		line-height: 2em;
@@ -424,7 +418,7 @@ animation-duration: 20s;
 		min-height:40px;
 	}
 	.content {
-		height:12vh;
+		height:15vh;
 	}
 }
 
@@ -462,7 +456,7 @@ animation-duration: 20s;
 		min-height:40px;
 	}
 	.content {
-		height:12vh;
+		height:20vh;
 	}
 }
 /*---------------------DESKTOP---------------------*/
