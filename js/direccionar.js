@@ -1,3 +1,6 @@
+function redirigir() {
+    window.location.href = "/html/recursos.html";
+}
 function redirigir0() {
     window.location.href = "/html/vida-sociedad.html";
 }

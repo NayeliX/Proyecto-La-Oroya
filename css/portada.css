@@ -3,6 +3,25 @@ body{
 	margin: 0;
 }
 
+.logo-institucion {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    z-index: 2;
+}
+
+.encabezado-btn {
+    position: absolute;
+    top: 20px; 
+    right: 10px;
+    z-index: 2;
+}
+
+.encabezado-btn span{
+	color: #fff;
+	border: #fff solid;
+}
+
 /*---------------------imagenes---------------------*/
 
 .col{
@@ -58,13 +77,13 @@ body{
     border-radius: 5px;
 }
 #prevBtn {
-    left: 10px;
+    left: 5px;
 }
 #prevBtn:hover {
     text-decoration: underline;
 }
 #nextBtn {
-    right: 10px;
+    right: 5px;
 }
 #nextBtn:hover {
     text-decoration: underline;
@@ -300,6 +319,31 @@ animation-duration: 20s;
 
 /*---------------------SMALL---------------------*/
 @media (min-width:200px) and (max-width:319px){
+	.logo-institucion{
+		position: absolute;
+		top: 57px; 
+		left: 5px;
+		z-index: 2;
+	}
+	.logo-institucion img{
+		width: 70px !important;
+		height: 70px !important;
+	}
+	.encabezado-btn {
+		position: absolute;
+		z-index: 2;
+		padding: 3px;
+	}
+	.encabezado-btn button{
+		top: 40px; 
+		right: -2em !important;
+	}
+	
+	.encabezado-btn span{
+		color: #fff;
+		border: #fff solid;
+		font-size: 10px;
+	}
 	.first_title{
 		font-size: 29px;
 		line-height: 2em;
@@ -341,6 +385,31 @@ animation-duration: 20s;
 }
 /*---------------------MOBILE---------------------*/
 @media (min-width:320px) and (max-width:480px){
+	.logo-institucion{
+		position: absolute;
+		top: 57px; 
+		left: 5px;
+		z-index: 2;
+	}
+	.logo-institucion img{
+		width: 70px !important;
+		height: 70px !important;
+	}
+	.encabezado-btn {
+		position: absolute;
+		z-index: 2;
+		padding: 3px;
+	}
+	.encabezado-btn button{
+		top: 40px; 
+		right: -2em !important;
+	}
+	
+	.encabezado-btn span{
+		color: #fff;
+		border: #fff solid;
+		font-size: 10px;
+	}
 	.first_title{
 		font-size: 35px;
 		line-height: 2em;
@@ -382,6 +451,31 @@ animation-duration: 20s;
 }
 /*---------------------TABLET---------------------*/
 @media (min-width: 481px) and (max-width:768px) {
+	.logo-institucion{
+		position: absolute;
+		top: 57px; 
+		left: 5px;
+		z-index: 2;
+	}
+	.logo-institucion img{
+		width: 70px !important;
+		height: 70px !important;
+	}
+	.encabezado-btn {
+		position: absolute;
+		z-index: 2;
+		padding: 3px;
+	}
+	.encabezado-btn button{
+		top: 40px; 
+		right: -2em !important;
+	}
+	
+	.encabezado-btn span{
+		color: #fff;
+		border: #fff solid;
+		font-size: 10px;
+	}
 	.first_title{
 		font-size: 45px;
 		line-height: 2em;

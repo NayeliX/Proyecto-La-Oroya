@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangea+Display&display=swap');
+.container_title {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos hijos en los extremos del contenedor */
+    align-items: center; /* Alinea verticalmente los elementos hijos */
+    padding: 0 1em;
+    background: rgb(156,223,255);
+    background: -moz-linear-gradient(180deg, rgba(156,223,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(156,223,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(156,223,255,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9cdfff",endColorstr="#ffffff",GradientType=1);
+}
+
+.container_title button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.container_title h1 {
+    font-family: 'Pangea Display',Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+	/* line-height: 96.8px; */
+	/* letter-spacing: normal; */
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    flex: 1;
+}
+.container-musica{
+    display: flex;
+    justify-content: space-between;
+    margin: 5em;
+    align-items: center;
+}
+.container-musica p{
+    font-family: 'Pangea Display',Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    max-width: 80%;
+}
+
+.container-libros{
+    display: flex;
+    justify-content: space-between;
+    margin: 5em;
+    align-items: center;
+}
+.container-libros p{
+    font-family: 'Pangea Display',Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    max-width: 70%;
+}
+/*---------------------SMALL---------------------*/
+@media (min-width:200px) and (max-width:319px){
+	.container_title{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+    .container_title button{
+        margin-right: auto;
+    }
+    .container_title h1{
+        padding: 0;
+        font-size: 30px;
+    }
+    .container-musica{
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+        align-items: center;
+    }
+    .container-musica p{
+        font-family: 'Pangea Display',Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        max-width: 90%;
+        text-align: justify;
+    }
+    .container-musica img{
+        width:200px;
+        height: auto;
+    }
+    .container-libros{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2em;
+        align-items: center;
+    }
+    .container-libros p{
+        font-family: 'Pangea Display',Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        max-width: 90%;
+        text-align: justify;
+    }
+    .container-libros img{
+        width:200px;
+        height: auto;
+    }
+}
+/*---------------------MOBILE---------------------*/
+@media (min-width:320px) and (max-width:480px){
+    .container_title{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+    .container_title button{
+        margin-right: auto;
+    }
+    .container_title h1{
+        padding: 0;
+        font-size: 38px;
+    }
+    .container-musica{
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+        align-items: center;
+    }
+    .container-musica p{
+        font-family: 'Pangea Display',Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        max-width: 90%;
+        text-align: justify;
+    }
+    .container-musica img{
+        width:200px;
+        height: auto;
+    }
+    .container-libros{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2em;
+        align-items: center;
+    }
+    .container-libros p{
+        font-family: 'Pangea Display',Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        max-width: 90%;
+        text-align: justify;
+    }
+    .container-libros img{
+        width:200px;
+        height: auto;
+    }
+}
+/*---------------------TABLET---------------------*/
+@media (min-width: 481px) and (max-width:768px){
+    .container_title{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+    .container_title button{
+        margin-right: auto;
+    }
+    .container_title h1{
+        padding: 0;
+    }
+    .container-musica{
+        margin: 2em;
+        align-items: center;
+    }
+    .container-musica p{
+        font-size: 15px;
+        max-width: 70%;
+    }
+    .container-musica img{
+        width:200px;
+        height: auto;
+    }
+    .container-libros{
+        margin: 2em;
+        align-items: center;
+    }
+    .container-libros p{
+        font-size: 15px;
+        max-width: 70%;
+    }
+    .container-libros img{
+        width:200px;
+        height: auto;
+    }
+}
+/*---------------------LAPTOP---------------------*/
+@media (min-width:769px) and (max-width:1023px){
+    .container_title{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+    .container_title button{
+        margin-right: auto;
+    }
+    .container_title h1{
+        padding: 0;
+    }
+    .container-musica{
+        margin: 2em;
+        align-items: center;
+    }
+    .container-musica p{
+        font-size: 15px;
+        max-width: 70%;
+    }
+    .container-musica img{
+        width:200px;
+        height: auto;
+    }
+    .container-libros{
+        margin: 2em;
+        align-items: center;
+    }
+    .container-libros p{
+        font-size: 15px;
+        max-width: 70%;
+    }
+    .container-libros img{
+        width:200px;
+        height: auto;
+    }
+}
