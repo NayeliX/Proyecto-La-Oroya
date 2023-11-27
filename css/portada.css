@@ -63,7 +63,12 @@ body{
 	background-size: cover;
 	background-position: center; 
 }
-
+.six{
+	background-image: url("/img/32.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+}
 /*---------------------btn ates y después---------------------*/
 
 #prevBtn, #nextBtn {

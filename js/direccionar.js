@@ -16,6 +16,9 @@ function redirigir3() {
 function redirigir4() {
     window.location.href = "/html/hechos_historicos.html";
 }
+function redirigir5() {
+    window.location.href = "/html/feria.html";
+}
 
 /* función retorno */
 function retornar() {
