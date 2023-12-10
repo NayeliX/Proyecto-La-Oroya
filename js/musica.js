@@ -9,3 +9,22 @@ document.addEventListener('DOMContentLoaded', function () {
         musica.play();
     });
 });
+
+var musica = document.getElementById("miMusicaFondo");
+
+    function toggleReproduccion() {
+        if (musica.paused) {
+            musica.play();
+        } else {
+            musica.pause();
+        }
+    }
+
+    function ajustarVolumen(direccion) {
+        var volumenActual = musica.volume;
+        if (direccion === '+' && volumenActual < 1.0) {
+            musica.volume += 0.1;
+        } else if (direccion === '-' && volumenActual > 0.0) {
+            musica.volume -= 0.1;
+        }
+    }
