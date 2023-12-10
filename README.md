@@ -1,2 +1,2 @@
-# Proyecto_LaOroya
+# MUSEO VIRTUAL MAREATEGUINO
 Museo de fotos históricas
