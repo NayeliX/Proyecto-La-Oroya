@@ -31,5 +31,24 @@
             <p>Se comparte una serie de libros que van a enriquecer vuestro conocimiento sobre La Oroya, aun falta más material bibliográfico, pero con el compromiso de seguir compartiéndolo</p>
         </div>
     </div>
+
+    <div class="frame">
+        <button id="descargarBtn" class="custom-btn btn-3"><span>Descargar Archivo</span></button>
+    </div>
+
+    <script>
+        document.getElementById("descargarBtn").addEventListener("click", function() {
+            // Cambia "nombre_del_archivo.txt" al nombre de tu archivo
+            var nombreArchivo = "/documento/REVISTA-ARQUELOGÍA - PALEONTOLOGÍA-2015.pdf";
+
+            // Crea un enlace temporal y simula un clic para iniciar la descarga
+            var enlaceDescarga = document.createElement("a");
+            enlaceDescarga.href = nombreArchivo;
+            enlaceDescarga.download = nombreArchivo;
+            document.body.appendChild(enlaceDescarga);
+            enlaceDescarga.click();
+            document.body.removeChild(enlaceDescarga);
+        });
+    </script>
 </body>
 </html>
