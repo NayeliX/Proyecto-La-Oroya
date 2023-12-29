@@ -18,13 +18,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pangea+Display&display=swap">
 </head>
 <body>
-    <audio id="miMusicaFondo" autoplay loop>
-        <source src="/musica/musica-fondo.mp3" type="audio/mp3">
-    </audio>
-    <script async src="/js/musica.js"></script>
     <div class="encabezado">
         <div class="logo-institucion">
-            <img src="/img/logoJCM.png" alt="Logo del colegio" width="90px" height="90px">
+            <img src="img/logoJCM.png" alt="Logo del colegio" width="90px" height="90px">
+        </div>
+        <audio id="miMusicaFondo" loop >
+            <source src="./html/musica-fondo.mp3" type="audio/mpeg">
+        </audio>
+        <div class="encabezado-btn-music">
+            <button onclick="togglePlayback()"type="button" class="btn">
+                <span>Música</span>
+            </button>
+            
+            <script>
+                var musica = document.getElementById('miMusicaFondo');
+            
+                function togglePlayback() {
+                    if (musica.paused) {
+                        musica.play();
+                    } else {
+                        musica.pause();
+                    }
+                }
+            </script>
         </div>
         <div class="encabezado-btn">
             <button type="button" class="btn" onclick="redirigir()"><span>Recursos</span></button>
@@ -93,12 +109,12 @@
             </div>
             <div id="nextBtn">Siguiente &gt;</div>
         </div>
-        <script async src="/js/direccionar.js"></script>
-        <script async src="/js/slider.js"></script>
+        <script async src="js/direccionar.js"></script>
+        <script async src="js/slider.js"></script>
     </section>
     <!-- seccción 2 -->
     <section class="sectionOne">
-        <img src="/img/29.jpg" alt="imagen_Sociedad" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
+        <img src="img/29.jpg" alt="imagen_Sociedad" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
         <div class="descriptionOne">
             <span>Conoce más sobre</span>
             <h2 onclick="redirigir0()">sala 1: vida y sociedad</h2>
@@ -112,11 +128,11 @@
             <h2 onclick="redirigir1()">sala 2: vida escolar</h2>
             <p>Uno de los sistemas educativos referentes en la nación peruana, fue la aplicada en los Centros Educativos Fiscalizados de La Oroya, muchos exitosos profesionales tuvieron su formación en estas aulas, CEF José Carlos Mariátegui Nº 31747, CEF César Vallejo Nº 31748, CEF José María Arguedas Nº 31749 o CEF 31750 José Andrés Razuri, son una muestra de instituciones importantes de La Oroya, sumados a ello INEI 11, GUE José Gálvez entre otras, quedan grabados en nuestra historia. Recordar al estudiante oroino y peruano, la responsabilidad de mejorar nuestra patria porque NOSOTROS SOMOS LA PATRIA.</p>
         </div>
-        <img src="/img/09.jpg" alt="imagen_Escolar" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
+        <img src="img/09.jpg" alt="imagen_Escolar" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
     </section>
     <!-- seccción 4 -->
     <section class="sectionOne">
-        <img src="/img/31.jpg" alt="imagen_Empresa" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
+        <img src="img/31.jpg" alt="imagen_Empresa" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
         <div class="descriptionOne">
             <span>Conoce más sobre</span>
             <h2 onclick="redirigir2()">sala 3: trabajadores y empresa</h2>
@@ -130,15 +146,15 @@
             <h2 onclick="redirigir3()">sala 4: reinvindicaciones y luchas</h2>
             <p>¡El pueblo unido jamás será vencido! El movimiento obrero peruano tuvo un gran referente a La Oroya, muchas vidas obreras terminaron en la fundición, buscando el desarrollo de sus familias y de la nación, cuanto diste al Perú, obrero oroino, las marchas y huelgas fueron muestra de tu gran responsabilidad social, hechos históricos como la Marcha de Sacrifico de 1969 quedan como un gran legado ¡Nuestras vidas por el progreso!  “Ni el viento, Ni la lluvia, Ni el sueño, Ni el cansancio; No hay sufrir que detenga la decisión del obrero”.</p>
         </div>
-        <img src="/img/quinto.jpg" alt="imagen_Luchas" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
+        <img src="img/quinto.jpg" alt="imagen_Luchas" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
     </section>
     <!-- seccción 6 -->
     <section class="sectionOne">
-        <img src="/img/32.jpg" alt="imagen_História" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
+        <img src="img/32.jpg" alt="imagen_História" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
         <div class="descriptionOne">
             <span>Conoce más sobre</span>
             <h2 onclick="redirigir4()">sala 5: hechos históricos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum esse qui rerum sed debitis dignissimos perferendis tenetur laudantium repellendus, inventore cumque. Velit mollitia, iure sint rerum nobis nostrum dignissimos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nesciunt illo. Nemo fuga commodi eveniet doloribus, corporis quaerat odio voluptatibus nisi nesciunt vel neque laboriosam fugiat ducimus veritatis obcaecati ipsam!</p>
+            <p>La Oroya es parte de la historia de nuestra patria, desde el viejo Chacahuaro de la época Inca hasta la actualidad,  se escribieron hechos históricos importantes de recordar: el combate de La Oroya en el contexto de la Guerra con Chile, la llegada del Ferrocarril en los años previos de la República Aristocrática o la nacionalización del Complejo Metalúrgico el 1 de enero de 1974, etc. son algunos sucesos que marcaron el devenir histórico de nuestra tierra.</p>
         </div>
     </section>
     <!-- seccción 7 -->
@@ -148,7 +164,7 @@
             <h2 onclick="redirigir5()">sala 6: feria de la identidad</h2>
             <p>"No se quiere lo que no se conoce", el rol de la educación es formar personas capaces de transformar las sociedades, para ello sentirse parte de ella es fundamental, involucrarse con sus problemas, buscar las soluciones, por ello el conocimiento histórico de La Oroya, manifestada en la Feria de la Identidad oroina, es el hecho concreto del estudiante, del poblador oroino de plasmar el conocimiento de esta tierra, sus mitos, costumbres, cultura, historia contribuyen al desarrollo de ese sentido de pertenencia, lo que permitirá tener ciudadanos que sean parte de la solución de nuestros problemas....</p>
         </div>
-        <img src="/img/feria.JPG" alt="imagen_Feria" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
+        <img src="img/feria.JPG" alt="imagen_Feria" loading="lazy" width="450" height="685" decoding="async" data-nimg="1">
     </section>
     <!--FOOTER-->
     <footer>
@@ -177,6 +193,6 @@
             <p>&copy; 2023 | Todos los derechos reservados </p>
         </div>
     </footer>
-    <script async src="/js/estadoPagina.js"></script>
+    <script async src="js/estadoPagina.js"></script>
 </body>
 </html>

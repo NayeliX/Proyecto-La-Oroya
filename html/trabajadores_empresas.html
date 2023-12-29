@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/empresa.png">
+    <link rel="icon" href="../img/empresa.png">
     <title>Trabajadores y empresa</title>
-    <link rel="stylesheet" href="/css/trabajadores-empresa.css">
+    <link rel="stylesheet" href="../css/trabajadores-empresa.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
@@ -15,148 +15,160 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <audio id="miMusica" autoplay loop>
-        <source src="/musica/sala3.mp3" type="audio/mp3">
-    </audio>
-    <script async src="/js/musica.js"></script>
     <div class="container_title">
         <button onclick="retornar()">
             <span><i class="fa fa-arrow-left" aria-hidden="true"></i> ATRÁS</span>
-            <script src="/js/direccionar.js"></script>
+            <script src="../js/direccionar.js"></script>
         </button>
         <h1>sala 3: Trabajadores y empresas</h1>
+        <audio id="miMusicaFondo" loop>
+            <source src="../html/sala3.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="togglePlayback()"><span>Música <i class="fa fa-volume-up" aria-hidden="true"></i></span></button>
+        
+        <script>
+            var musica = document.getElementById('miMusicaFondo');
+        
+            function togglePlayback() {
+                if (musica.paused) {
+                    musica.play();
+                } else {
+                    musica.pause();
+                }
+            }
+        </script>
     </div>
     <section class="imagenes_modal">
         <!-- modal1 -->
         <div class="modals_docu">
             <div class="modal_img_docu">  
-                <img class="imagen" src="/img/trabajadores-empresas/01.jpg" alt="img_empresa_1" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/01.jpg" alt="img_empresa_1" loading="lazy">
             </div>
         </div>
         
         <!-- modal2 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/02.jpg" alt="img_empresa_2" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/02.jpg" alt="img_empresa_2" loading="lazy">
             </div>
         </div>
         
         <!-- modal3 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/03.jpg" alt="img_empresa_3" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/03.jpg" alt="img_empresa_3" loading="lazy">
             </div>
         </div>
         
         <!-- modal4 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/04.jpg" alt="img_empresa_4" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/04.jpg" alt="img_empresa_4" loading="lazy">
             </div>
         </div>
         
         <!-- modal5 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/05.jpg" alt="img_empresa_5" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/05.jpg" alt="img_empresa_5" loading="lazy">
             </div>
         </div>
         
         <!-- modal6 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/06.jpg" alt="img_empresa_6" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/06.jpg" alt="img_empresa_6" loading="lazy">
             </div>
         </div>
         
         <!-- modal7 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/07.jpg" alt="img_empresa_7" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/07.jpg" alt="img_empresa_7" loading="lazy">
             </div>
         </div>
         
         <!-- modal8 -->
         <div class="modals_docu">
             <div class="modal_img_docu">    
-                <img class="imagen" src="/img/trabajadores-empresas/08.jpg" alt="img_empresa_8" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/08.jpg" alt="img_empresa_8" loading="lazy">
             </div>
         </div>
         
         <!-- modal9 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/09.jpg" alt="img_empresa_9" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/09.jpg" alt="img_empresa_9" loading="lazy">
             </div>
         </div>
         
         <!-- modal10 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/10.jpg" alt="img_empresa_10" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/10.jpg" alt="img_empresa_10" loading="lazy">
             </div>
         </div>
         
         <!-- modal11 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/11.jpg" alt="img_empresa_11" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/11.jpg" alt="img_empresa_11" loading="lazy">
             </div>
         </div>
         
         <!-- modal12 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/12.jpg" alt="img_empresa_12" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/12.jpg" alt="img_empresa_12" loading="lazy">
             </div>
         </div>
         
         <!-- modal13 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/13.jpg" alt="img_empresa_13" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/13.jpg" alt="img_empresa_13" loading="lazy">
             </div>
         </div>
         
         <!-- modal14 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/14.jpg" alt="img_empresa_14" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/14.jpg" alt="img_empresa_14" loading="lazy">
             </div>
         </div>
         
         <!-- modal15 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/15.jpg" alt="img_empresa_15" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/15.jpg" alt="img_empresa_15" loading="lazy">
             </div>
         </div>
         
         <!-- modal16 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/16.jpg" alt="img_empresa_16" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/16.jpg" alt="img_empresa_16" loading="lazy">
             </div>
         </div>
         
         <!-- modal17 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/17.jpg" alt="img_empresa_17" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/17.jpg" alt="img_empresa_17" loading="lazy">
             </div>
         </div>
         
         <!-- modal18 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/18.jpg" alt="img_empresa_18" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/18.jpg" alt="img_empresa_18" loading="lazy">
             </div>
         </div>
         
         <!-- modal19 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/19.jpg" alt="img_empresa_19" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/19.jpg" alt="img_empresa_19" loading="lazy">
             </div>
         </div>
         
@@ -167,7 +179,7 @@
                     <i class="fa fa-file-text" aria-hidden="true"></i>
                 </button>
     
-                <img class="imagen" src="/img/trabajadores-empresas/20.jpg" alt="img_empresa_20" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/20.jpg" alt="img_empresa_20" loading="lazy">
             </div>
             
             <!-- The Modal -->
@@ -191,7 +203,7 @@
                     <i class="fa fa-file-text" aria-hidden="true"></i>
                 </button>
     
-                <img class="imagen" src="/img/trabajadores-empresas/21.jpg" alt="img_empresa_21" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/21.jpg" alt="img_empresa_21" loading="lazy">
             </div>
             
             <!-- The Modal -->
@@ -211,40 +223,40 @@
         <!-- modal22 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/22.jpg" alt="img_empresa_22" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/22.jpg" alt="img_empresa_22" loading="lazy">
             </div>
         </div>
         
         <!-- modal23 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/23.jpg" alt="img_empresa_23" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/23.jpg" alt="img_empresa_23" loading="lazy">
             </div>
         </div>
 
         <!-- modal24 -->
         <div class="modals_docu">
             <div class="modal_img_docu">    
-                <img class="imagen" src="/img/trabajadores-empresas/24.jpg" alt="img_empresa_24" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/24.jpg" alt="img_empresa_24" loading="lazy">
             </div>
         </div>
 
         <!-- modal25 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/25.jpg" alt="img_empresa_25" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/25.jpg" alt="img_empresa_25" loading="lazy">
             </div>
         </div>
 
         <!-- modal26 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/trabajadores-empresas/26.jpg" alt="img_empresa_26" loading="lazy">
+                <img class="imagen" src="../img/trabajadores-empresas/26.jpg" alt="img_empresa_26" loading="lazy">
             </div>
         </div>
     </section>
 
     <button id="scrollToTopBtn"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-    <script async src="/js/subir.js"></script>
+    <script async src="../js/subir.js"></script>
 </body>
 </html>

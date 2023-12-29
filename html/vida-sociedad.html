@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/social.png">
+    <link rel="icon" href="../img/social.png">
     <title>Vida y Sociedad</title>
-    <link rel="stylesheet" href="/css/vida-sociedad.css">
+    <link rel="stylesheet" href="../css/vida-sociedad.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
@@ -15,478 +15,491 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <audio id="miMusica" autoplay loop>
-        <source src="/musica/sala1.mp3" type="audio/mp3">
-    </audio>
-    <script async src="/js/musica.js"></script>
+    
 
     <div class="container_title">
         <button onclick="retornar()">
             <span><i class="fa fa-arrow-left" aria-hidden="true"></i> ATRÁS</span>
-            <script src="/js/direccionar.js"></script>
+            <script src="../js/direccionar.js"></script>
         </button>
         <h1>sala 1: vida y sociedad en la oroya</h1>
+        <audio id="miMusicaFondo" loop>
+            <source src="../html/sala1.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="togglePlayback()"><span>Música <i class="fa fa-volume-up" aria-hidden="true"></i></span></button>
+        
+        <script>
+            var musica = document.getElementById('miMusicaFondo');
+        
+            function togglePlayback() {
+                if (musica.paused) {
+                    musica.play();
+                } else {
+                    musica.pause();
+                }
+            }
+        </script>
     </div>
     <section class="imagenes_modal">
         <!-- modal1 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/01.jpg" alt="img_sociedad_1" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/01.jpg" alt="img_sociedad_1" loading="lazy">
             </div>
         </div>
         
         <!-- modal2 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/02.jpg" alt="img_sociedad_2" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/02.jpg" alt="img_sociedad_2" loading="lazy">
             </div>
         </div>
         
         <!-- modal3 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/03.jpg" alt="img_sociedad_3" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/03.jpg" alt="img_sociedad_3" loading="lazy">
             </div>
         </div>
         
         <!-- modal4 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/04.jpg" alt="img_sociedad_4" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/04.jpg" alt="img_sociedad_4" loading="lazy">
             </div>
         </div>
         
         <!-- modal5 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/05.jpg" alt="img_sociedad_5" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/05.jpg" alt="img_sociedad_5" loading="lazy">
             </div>
         </div>
         
         <!-- modal6 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/06.jpg" alt="img_sociedad_6" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/06.jpg" alt="img_sociedad_6" loading="lazy">
             </div>
         </div>
         
         <!-- modal7 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/07.jpg" alt="img_sociedad_7" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/07.jpg" alt="img_sociedad_7" loading="lazy">
             </div>
         </div>
         
         <!-- modal8 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/08.jpg" alt="img_sociedad_8" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/08.jpg" alt="img_sociedad_8" loading="lazy">
             </div>
         </div>
         
         <!-- modal9 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/09.jpg" alt="img_sociedad_9" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/09.jpg" alt="img_sociedad_9" loading="lazy">
             </div>
         </div>
         
         <!-- modal10 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/10.jpg" alt="img_sociedad_10" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/10.jpg" alt="img_sociedad_10" loading="lazy">
             </div>
         </div>
         
         <!-- modal11 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/11.jpg" alt="img_sociedad_11" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/11.jpg" alt="img_sociedad_11" loading="lazy">
             </div>
         </div>
         
         <!-- modal12 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/12.jpg" alt="img_sociedad_12" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/12.jpg" alt="img_sociedad_12" loading="lazy">
             </div>
         </div>
         
         <!-- modal13 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/13.jpg" alt="img_sociedad_13" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/13.jpg" alt="img_sociedad_13" loading="lazy">
             </div>
         </div>
         
         <!-- modal14 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/14.jpg" alt="img_sociedad_14" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/14.jpg" alt="img_sociedad_14" loading="lazy">
             </div>
         </div>
         
         <!-- modal15 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/15.jpg" alt="img_sociedad_15" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/15.jpg" alt="img_sociedad_15" loading="lazy">
             </div>
         </div>
         
         <!-- modal16 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/16.jpg" alt="img_sociedad_16" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/16.jpg" alt="img_sociedad_16" loading="lazy">
             </div>
         </div>
         
         <!-- modal17 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/17.jpg" alt="img_sociedad_17" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/17.jpg" alt="img_sociedad_17" loading="lazy">
             </div>
         </div>
         
         <!-- modal18 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/18.jpg" alt="img_sociedad_18" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/18.jpg" alt="img_sociedad_18" loading="lazy">
             </div>
         </div>
         
         <!-- modal19 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/19.jpg" alt="img_sociedad_19" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/19.jpg" alt="img_sociedad_19" loading="lazy">
             </div>
         </div>
         
         <!-- modal20 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/20.jpg" alt="img_sociedad_20" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/20.jpg" alt="img_sociedad_20" loading="lazy">
             </div>
         </div>
         
         <!-- modal21 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/21.jpg" alt="img_sociedad_21" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/21.jpg" alt="img_sociedad_21" loading="lazy">
             </div>
         </div>
         
         <!-- modal22 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/222.jpg" alt="img_sociedad_22" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/222.jpg" alt="img_sociedad_22" loading="lazy">
             </div>
         </div>
         
         <!-- modal23 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/23.jpg" alt="img_sociedad_23" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/23.jpg" alt="img_sociedad_23" loading="lazy">
             </div>
         </div>
         
         <!-- modal24 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/24.jpg" alt="img_sociedad_24" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/24.jpg" alt="img_sociedad_24" loading="lazy">
             </div>
         </div>
         
         <!-- modal25 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/25.jpg" alt="img_sociedad_25" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/25.jpg" alt="img_sociedad_25" loading="lazy">
             </div>
         </div>
         
         <!-- modal26 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/26.jpg" alt="img_sociedad_26" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/26.jpg" alt="img_sociedad_26" loading="lazy">
             </div>
         </div>
         
         <!-- modal27 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/27.jpg" alt="img_sociedad_27" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/27.jpg" alt="img_sociedad_27" loading="lazy">
             </div>
         </div>
         
         <!-- modal28 -->
         <div class="modals_docu">
             <div class="modal_img_docu">    
-                <img class="imagen" src="/img/Vida-Sociedad/28.jpg" alt="img_sociedad_28" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/28.jpg" alt="img_sociedad_28" loading="lazy">
             </div>
         </div>
         
         <!-- modal29 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/29.jpg" alt="img_sociedad_29" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/29.jpg" alt="img_sociedad_29" loading="lazy">
             </div>
         </div>
         
         <!-- modal30 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/30.jpg" alt="img_sociedad_30" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/30.jpg" alt="img_sociedad_30" loading="lazy">
             </div>
         </div>
 
         <!-- modal31 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/31.jpg" alt="img_sociedad_31" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/31.jpg" alt="img_sociedad_31" loading="lazy">
             </div>
         </div>
 
         <!-- modal32 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/32.jpg" alt="img_sociedad_32" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/32.jpg" alt="img_sociedad_32" loading="lazy">
             </div>
         </div>
 
         <!-- modal33 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/33.jpg" alt="img_sociedad_33" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/33.jpg" alt="img_sociedad_33" loading="lazy">
             </div>
         </div>
 
         <!-- modal34 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/34.jpg" alt="img_sociedad_34" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/34.jpg" alt="img_sociedad_34" loading="lazy">
             </div>
         </div>
 
         <!-- modal35 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/35.jpg" alt="img_sociedad_35" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/35.jpg" alt="img_sociedad_35" loading="lazy">
             </div>
         </div>
 
         <!-- modal36 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/36.jpg" alt="img_sociedad_36" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/36.jpg" alt="img_sociedad_36" loading="lazy">
             </div>
         </div>
 
         <!-- modal37 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/37.jpg" alt="img_sociedad_37" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/37.jpg" alt="img_sociedad_37" loading="lazy">
             </div>
         </div>
 
         <!-- modal38 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/38.jpg" alt="img_sociedad_38" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/38.jpg" alt="img_sociedad_38" loading="lazy">
             </div>
         </div>
 
         <!-- modal39 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/39.jpg" alt="img_sociedad_39" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/39.jpg" alt="img_sociedad_39" loading="lazy">
             </div>
         </div>
         
         <!-- modal40 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/40.jpg" alt="img_sociedad_40" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/40.jpg" alt="img_sociedad_40" loading="lazy">
             </div>
         </div>
 
         <!-- modal41 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/41.jpg" alt="img_sociedad_41" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/41.jpg" alt="img_sociedad_41" loading="lazy">
             </div>
         </div>
 
         <!-- modal42 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/42.jpg" alt="img_sociedad_42" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/42.jpg" alt="img_sociedad_42" loading="lazy">
             </div>
         </div>
 
         <!-- modal43 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/43.jpg" alt="img_sociedad_43" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/43.jpg" alt="img_sociedad_43" loading="lazy">
             </div>
         </div>
 
         <!-- modal44 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/44.jpg" alt="img_sociedad_44" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/44.jpg" alt="img_sociedad_44" loading="lazy">
             </div>
         </div>
 
         <!-- modal45 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/46.jpg" alt="img_sociedad_45" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/46.jpg" alt="img_sociedad_45" loading="lazy">
             </div>
         </div>
 
         <!-- modal46 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/47.jpg" alt="img_sociedad_46" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/47.jpg" alt="img_sociedad_46" loading="lazy">
             </div>
         </div>
 
         <!-- modal47 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/48.jpg" alt="img_sociedad_47" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/48.jpg" alt="img_sociedad_47" loading="lazy">
             </div>
         </div>
 
         <!-- modal48 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/49.jpg" alt="img_sociedad_48" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/49.jpg" alt="img_sociedad_48" loading="lazy">
             </div>
         </div>
 
         <!-- modal49 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/50.jpg" alt="img_sociedad_49" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/50.jpg" alt="img_sociedad_49" loading="lazy">
             </div>
         </div>
 
         <!-- modal50 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/51.jpg" alt="img_sociedad_50" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/51.jpg" alt="img_sociedad_50" loading="lazy">
             </div>
         </div>
 
         <!-- modal51 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/52.jpg" alt="img_sociedad_51" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/52.jpg" alt="img_sociedad_51" loading="lazy">
             </div>
         </div>
 
         <!-- modal52 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/53.jpg" alt="img_sociedad_52" loading="lazy">
+                <img class="imagen" src="../img/Vida-Sociedad/53.jpg" alt="img_sociedad_52" loading="lazy">
             </div>
         </div>
 
         <!-- modal53 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/54.jpg" alt="img_sociedad_53" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/54.jpg" alt="img_sociedad_53" loading="lazy">
             </div>
         </div>
 
         <!-- modal54 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/55.jpg" alt="img_sociedad_54" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/55.jpg" alt="img_sociedad_54" loading="lazy">
             </div>
         </div>
 
         <!-- modal55 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/56.jpg" alt="img_sociedad_55" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/56.jpg" alt="img_sociedad_55" loading="lazy">
             </div>
         </div>
 
         <!-- modal56 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/57.jpg" alt="img_sociedad_56" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/57.jpg" alt="img_sociedad_56" loading="lazy">
             </div>
         </div>
 
         <!-- modal57 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/58.jpg" alt="img_sociedad_57" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/58.jpg" alt="img_sociedad_57" loading="lazy">
             </div>
         </div>
 
         <!-- modal58 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/59.jpg" alt="img_sociedad_58" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/59.jpg" alt="img_sociedad_58" loading="lazy">
             </div>
         </div>
 
         <!-- modal59 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/60.jpg" alt="img_sociedad_59" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/60.jpg" alt="img_sociedad_59" loading="lazy">
             </div>
         </div>
 
         <!-- modal60 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/61.jpg" alt="img_sociedad_60" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/61.jpg" alt="img_sociedad_60" loading="lazy">
             </div>
         </div>
 
         <!-- modal61 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/62.jpg" alt="img_sociedad_61" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/62.jpg" alt="img_sociedad_61" loading="lazy">
             </div>
         </div>
 
         <!-- modal62 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/63.jpg" alt="img_sociedad_62" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/63.jpg" alt="img_sociedad_62" loading="lazy">
             </div>
         </div>
 
         <!-- modal63 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/64.jpg" alt="img_sociedad_63" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/64.jpg" alt="img_sociedad_63" loading="lazy">
             </div>
         </div>
 
         <!-- modal64 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/65.jpg" alt="img_sociedad_64" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/65.jpg" alt="img_sociedad_64" loading="lazy">
             </div>
         </div>
 
         <!-- modal65 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/66.jpg" alt="img_sociedad_65" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/66.jpg" alt="img_sociedad_65" loading="lazy">
             </div>
         </div>
 
         <!-- modal66 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/67.jpg" alt="img_sociedad_66" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/67.jpg" alt="img_sociedad_66" loading="lazy">
             </div>
 
         </div>
@@ -494,82 +507,82 @@
         <!-- modal67 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/68.jpg" alt="img_sociedad_67" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/68.jpg" alt="img_sociedad_67" loading="lazy">
             </div>
         </div>
 
         <!-- modal68 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/69.jpg" alt="img_sociedad_68" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/69.jpg" alt="img_sociedad_68" loading="lazy">
             </div>
         </div>
 
         <!-- modal69 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/70.jpg" alt="img_sociedad_69" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/70.jpg" alt="img_sociedad_69" loading="lazy">
             </div>
         </div>
 
         <!-- modal70 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/71.jpg" alt="img_sociedad_70" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/71.jpg" alt="img_sociedad_70" loading="lazy">
             </div>
         </div>
 
         <!-- modal71 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/72.jpg" alt="img_sociedad_71" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/72.jpg" alt="img_sociedad_71" loading="lazy">
             </div>
         </div>
 
         <!-- modal72 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/73.jpg" alt="img_sociedad_72" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/73.jpg" alt="img_sociedad_72" loading="lazy">
             </div>
         </div>
 
         <!-- modal73 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/74.jpg" alt="img_sociedad_73" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/74.jpg" alt="img_sociedad_73" loading="lazy">
             </div>
         </div>
 
         <!-- modal74 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/75.jpg" alt="img_sociedad_74" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/75.jpg" alt="img_sociedad_74" loading="lazy">
             </div>
         </div>
 
         <!-- modal75 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/76.jpg" alt="img_sociedad_75" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/76.jpg" alt="img_sociedad_75" loading="lazy">
             </div>
         </div>
 
         <!-- modal76 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/77.jpg" alt="img_sociedad_76" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/77.jpg" alt="img_sociedad_76" loading="lazy">
             </div>
         </div>
 
         <!-- modal77 -->
         <div class="modals_docu">
             <div class="modal_img_docu">
-                <img class="imagen" src="/img/Vida-Sociedad/78.jpg" alt="img_sociedad_77" loading="lazy">
+                <img class="imagen" src="..//img/Vida-Sociedad/78.jpg" alt="img_sociedad_77" loading="lazy">
             </div>
         </div>
     </section>
 
     <button id="scrollToTopBtn"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-    <script async src="/js/subir.js"></script>
+    <script async src="..//js/subir.js"></script>
 </body>
 </html>

@@ -16,6 +16,16 @@ body{
     right: 10px;
     z-index: 2;
 }
+.encabezado-btn-music {
+    position: absolute;
+    top: 20px; 
+    right: 670px;
+    z-index: 2;
+}
+.encabezado-btn-music span{
+	color: #fff;
+	border: #fff solid;
+}
 
 .encabezado-btn span{
 	color: #fff;
@@ -34,37 +44,37 @@ body{
     filter: brightness(0.9);
 }
 .first{
-	background-image: url("/img/Prueba02.jpg");
+	background-image: url("../img/Prueba02.jpg");
 	background-repeat: no-repeat; 
 	background-size: cover;
 	background-position: center;
 }
 .second{
-	background-image: url("/img/12.jpg");
+	background-image: url("../img/12.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .third{
-	background-image: url("/img/22.jpg");
+	background-image: url("../img/22.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center; 
 }
 .fourth{
-	background-image: url("/img/cuarto.jpg");
+	background-image: url("../img/cuarto.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center; 
 }
 .fifth{
-	background-image: url("/img/28.jpg");
+	background-image: url("../img/28.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center; 
 }
 .six{
-	background-image: url("/img/32.jpg");
+	background-image: url("../img/32.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center; 

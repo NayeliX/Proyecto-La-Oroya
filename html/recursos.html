@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos</title>
-    <link rel="stylesheet" href="/css/recursos.css">
+    <link rel="stylesheet" href="../css/recursos.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
@@ -17,17 +17,17 @@
     <div class="container_title">
         <button onclick="retornar()">
             <span><i class="fa fa-arrow-left" aria-hidden="true"></i> ATRÁS</span>
-            <script src="/js/direccionar.js"></script>
+            <script src="../js/direccionar.js"></script>
         </button>
         <h1>Recursos</h1>
     </div>
     <div class="container-recursos">
         <div class="container-musica">
             <p>Escanea el código QR para que disfrutes de toda la música que tenemos para ti</p>
-            <img src="/img/qr-musica.jpg" alt="Codigo QR de la música" width="300" height="auto">
+            <img src="../img/qr-musica.jpg" alt="Codigo QR de la música" width="300" height="auto">
         </div>
         <div class="container-libros">
-            <img src="/img/qr-libros.jpg" alt="Codigo QR de libros" width="300" height="300">
+            <img src="../img/qr-libros.jpg" alt="Codigo QR de libros" width="300" height="300">
             <p>Se comparte una serie de libros que van a enriquecer vuestro conocimiento sobre La Oroya, aun falta más material bibliográfico, pero con el compromiso de seguir compartiéndolo</p>
         </div>
     </div>
@@ -37,14 +37,15 @@
     </div>
 
     <script>
-        document.getElementById("descargarBtn").addEventListener("click", function() {
+        document.getElementById("descargarBtn").addEventListener("mousedown", function() {
             // Cambia "nombre_del_archivo.txt" al nombre de tu archivo
-            var nombreArchivo = "/documento/REVISTA-ARQUELOGÍA - PALEONTOLOGÍA-2015.pdf";
+            var nombreArchivo = "../documento/REVISTA-ARQUELOGÍA - PALEONTOLOGÍA-2015.pdf";
 
             // Crea un enlace temporal y simula un clic para iniciar la descarga
             var enlaceDescarga = document.createElement("a");
             enlaceDescarga.href = nombreArchivo;
             enlaceDescarga.download = nombreArchivo;
+            enlaceDescarga.target = "_blank"; // Agrega el atributo target="_blank"
             document.body.appendChild(enlaceDescarga);
             enlaceDescarga.click();
             document.body.removeChild(enlaceDescarga);
